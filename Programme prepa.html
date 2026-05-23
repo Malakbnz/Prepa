@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>1BAC SM — Programme Marathon J-7</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{background: #f4f4f7; padding: 20px;}
+.wrap{max-width: 800px; margin: 0 auto; padding:1rem; font-family: system-ui, -apple-system, sans-serif; background: #fff; border-radius: 12px; box-shadow: 0 4px 10px rgba(0,0,0,0.08);}
+h2 {font-size: 20px; margin-bottom: 6px; color: #111827; text-align: center;}
+.subtitle {font-size: 13px; color: #dc2626; font-weight: bold; text-align: center; margin-bottom: 12px;}
+.group-intro {background: #fef2f2; padding: 14px; border-radius: 8px; font-size: 13px; color: #991b1b; margin-bottom: 16px; line-height: 1.6; border-right: 4px solid #dc2626;}
+.tabs{display:flex;gap:6px;flex-wrap:wrap;margin-bottom:16px; justify-content: center;}
+.tab{font-size:12px;font-weight:500;padding:6px 14px;border-radius:20px;border:0.5px solid #E5E7EB;background:#fff;color:#4B5563;cursor:pointer;transition:all 0.15s}
+.tab.active{background:#dc2626;color:#fff;border-color:#dc2626}
+.panel{display:none}
+.panel.active{display:block}
+.dh{margin-bottom:14px; border-bottom: 2px solid #F3F4F6; padding-bottom: 8px;}
+.dh-title{font-size:16px;font-weight:600;color:#111827}
+.dh-sub{font-size:12px;color:#4B5563;margin-top:3px}
+.session{background:#fff;border:0.5px solid #E5E7EB;border-radius:8px;margin-bottom:8px;overflow:hidden; box-shadow: 0 1px 2px rgba(0,0,0,0.02)}
+.sh{display:flex;align-items:center;gap:8px;padding:9px 13px;flex-wrap:wrap}
+.tb{font-size:11px;font-weight:500;padding:3px 9px;border-radius:12px;white-space:nowrap;min-width:96px;text-align:center}
+.sb{font-size:11px;font-weight:500;padding:3px 9px;border-radius:12px;white-space:nowrap}
+.st{font-size:13px;font-weight:500;color:#111827;flex:1;min-width:120px}
+.sd{font-size:11px;color:#6B7280;white-space:nowrap}
+.sbody{padding:4px 13px 11px;border-top:0.5px solid #E5E7EB; background: #FAFAFA;}
+.task{display:flex;gap:7px;padding:6px 0;border-bottom:0.5px solid #F3F4F6;align-items:flex-start}
+.task:last-child{border-bottom:none}
+.tn{font-size:11px;color:#ef4444;min-width:16px;padding-top:2px;font-weight:bold}
+.tt{font-size:12px;color:#374151;line-height:1.5}
+.sync-block {background: #fff5f5; border: 1px dashed #ef4444; border-radius: 6px; padding: 10px 12px; margin-top: 8px; font-size: 12px; color: #991b1b; line-height: 1.5;}
+.tip{background:#F9FAFB;border-radius:6px;padding:9px 13px;margin-top:10px;font-size:12px;color:#4B5563;line-height:1.6; border-left: 4px solid #9CA3AF;}
+.tip b{color:#111827;font-weight:600}
+.fr{background:#EEEDFE;color:#3C3489}
+.hg{background:#E6F1FB;color:#185FA5}
+.ei{background:#EAF3DE;color:#3B6D11}
+.ar{background:#FAEEDA;color:#854F0B}
+.br{background:#F3F4F6;color:#4B5563}
+.rv{background:#FCEBEB;color:#A32D2D}
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <h2>1BAC SM — Programme Marathon J-7</h2>
+  <div class="subtitle">Dernière Semaine : Focus Objectif Practice & Automatismes</div>
+  
+  <div class="group-intro">
+    <strong>توجيهات الأسبوع الأخير (Consignes J-7) :</strong> الحفظ والملخصات تم ضبطها بنجاح. هذا الأسبوع مخصص بالكامل **للتدريب المكثف والسرعة**. نشتغل على الامتحانات في ظروف حقيقية، ونلتقي في <b>نقاط المزامنة</b> للمقارنة والتصحيح الصارم وفق معايير التنقيط الرسمية للوزارة.
+  </div>
+
+<div class="tabs">
+  <div class="tab active" onclick="show('mon')">الإثنين / Mon</div>
+  <div class="tab" onclick="show('tue')">الثلاثاء / Tue</div>
+  <div class="tab" onclick="show('wed')">الأربعاء / Wed</div>
+  <div class="tab" onclick="show('thu')">الخميس / Thu</div>
+  <div class="tab" onclick="show('fri')">الجمعة / Fri</div>
+  <div class="tab" onclick="show('sat')">السبت / Sat</div>
+  <div class="tab" onclick="show('sun')">الأحد / Sun</div>
+</div>
+
+<div class="panel active" id="p-mon">
+  <div class="dh">
+    <div class="dh-title">الإثنين — ماراثون التاريخ والجغرافيا (Vitesse & Analyse)</div>
+    <div class="dh-sub">Objectif : Rapidité d'écriture des essais et étude de documents</div>
+  </div>
+
+  <div class="session">
+    <div class="sh"><span class="tb hg">9:00 – 11:00</span><span class="sb hg">امتحان تاريخ</span><span class="st">الامتحان التجريبي الأول: التركيز على الوثائق والمصطلحات</span><span class="sd">2h</span></div>
+    <div class="sbody">
+      <div class="task"><span class="tn">»</span><div><div class="tt">إنجاز شق اشتغال على الوثائق (التاريخ) لجهة سابقة: استخراج الأفكار، السياق التاريخي، وتركيب الفكرة الأساسية.</div></div></div>
+      <div class="task"><span class="tn">»</span><div><div class="tt">تطبيق السرعة في تحرير تعاريف المصطلحات الأربعة المطلوبة في الامتحان بدون تردد.</div></div></div>
+      <div class="sync-block">👥 <b>Point de Synchro (11:00) :</b> نفتح شات المجموعة لتبادل صياغة "السياق التاريخي". نقارن الأسلوب الأسرع والأكثر دقة لربط الزمان، المكان، والحدث.</div>
+    </div>
+  </div>
+
+  <div class="session"><div class="sh"><span class="tb br">11:00 – 11:30</span><span class="sb br">استراحة</span><span class="st">تخفيف الضغط</span><span class="sd">30min</span></div></div>
+
+  <div class="session">
+    <div class="sh"><span class="tb hg">11:30 – 13:30</span><span class="sb hg">ورشة المقالي</span><span class="st">إنتاج المقالات الجغرافية والتاريخية (Essais Express)</span><span class="sd">2h</span></div>
+    <div class="sbody">
+      <div class="task"><span class="tn">1</span><div><div class="tt">صياغة تصميم ومقدمة + خاتمة لـ 3 مواضيع مقالية مختلفة (المجال المغربي، التنافس الإمبريالي، أزمة العالم العربي).</div></div></div>
+      <div class="task"><span class="tn">2</span><div><div class="tt">تحرير عرض كامل لأحد هذه المواضيع مع احترام الروابط المنطقية والخطوات المنهجية (40 دقيقة كحد أقصى).</div></div></div>
+      <div class="sync-block">👥 <b>Point de Synchro (13:30) :</b> نقوم بالتصحيح المتبادل للمقالات (Peer-grading). نركز على جانب الجوانب الشكلية والمنهجية (هل تم نسيان الربط بين الفقرات؟).</div>
+    </div>
+  </div>
+
+  <div class="session"><div class="sh"><span class="tb br">13:30 – 15:00</span><span class="sb br">غداء + راحة</span><span class="st">راحة تامة للاستعداد للحصة المسائية</span><span class="sd">1h30</span></div></div>
+
+  <div class="session">
+    <div class="sh"><span class="tb hg">15:00 – 17:30</span><span class="sb hg">امتحان جغرافيا</span><span class="st">الامتحان التجريبي الثاني: مهارة المبيانات والجداول</span><span class="sd">2h30</span></div>
+    <div class="sbody">
+      <div class="task"><span class="tn">»</span><div><div class="tt">اختيار امتحان يتضمن رسم مبيان (منحنى أو أعمدة). التدرب على دقة المقياس، العنوان، والمفتاح في وقت قياسي.</div></div></div>
+      <div class="task"><span class="tn">»</span><div><div class="tt">تحرير فقرة تفسيرية للمبيان اعتماداً على المكتسبات المعرفية.</div></div></div>
+      <div class="sync-block">👥 <b>Point de Synchro (17:30) :</b> يرسل كل عضو صورة للمبيان الذي رسمه. نتحقق جماعياً من سلامة المقياس والمظهر العام للمبيان لتفادي ضياع النقط مجاناً.</div>
+    </div>
+  </div>
+</div>
+
+<div class="panel" id="p-tue">
+  <div class="dh">
+    <div class="dh-title">الثلاثاء — ورشة اللغة الفرنسية (Rédaction & Contextualisation)</div>
+    <div class="dh-sub">Objectif : Maximiser les points de l'étude de texte et de la Production Écrite</div>
+  </div>
+
+  <div class="session">
+    <div class="sh"><span class="tb fr">9:00 – 11:30</span><span class="sb fr">Français</span><span class="st">Étude de Texte & Figures de Style (Sprint)</span><span class="sd">2h30</span></div>
+    <div class="sbody">
+      <div class="task"><span class="tn">1</span><div><div class="tt">Résoudre les questions de compréhension de 3 examens régionaux différents (focalisés sur les passages clés des 3 œuvres).</div></div></div>
+      <div class="task"><span class="tn">2</span><div><div class="tt">Répondre directement aux questions de réaction (Questions 9 et 10) : rédiger des réponses claires en 3 lignes en soignant la syntaxe.</div></div></div>
+      <div class="sync-block">👥 <b>Point de Synchro (11:30) :</b> تبادل صياغة الأجوبة الخاصة بالسؤالين 9 و10. نحدد أفضل الأساليب لإبداء الرأي (À mon avis, Personnellement, Je pense que...) بطريقة مقنعة وخالية من الأخطاء.</div>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="sh"><span class="tb rv">14:30 – 17:30</span><span class="sb rv">Production Écrite</span><span class="st">Atelier Production Écrite Plan Dialectique / Analytique</span><span class="sd">3h</span></div>
+    <div class="sbody">
+      <div class="task"><span class="tn">»</span><div><div class="tt">Prendre 2 sujets d'actualité liés aux œuvres (la superstition, la violence, le conflit des générations, la prison).</div></div></div>
+      <div class="task"><span class="tn">»</span><div><div class="tt">Rédiger entièrement une Production Écrite (Plan Dialectique : Introduction, Thèse, Antithèse, Synthèse/Conclusion) en 60 minutes chrono.</div></div></div>
+      <div class="sync-block">👥 <b>Correction Croisée (17:30) :</b> Chaque membre envoie sa production à son binôme. Notation stricte sur 10 points selon la grille ministérielle : structure du plan (4 pts), cohérence des arguments (3 pts), correction de la langue (3 pts).</div>
+    </div>
+  </div>
+</div>
+
+<div class="panel" id="p-wed">
+  <div class="dh">
+    <div class="dh-title">الأربعاء — معالجة الوضعيات التقويمية (Éducation Islamique)</div>
+    <div class="dh-sub">Objectif : Rapidité d'extraction et formulation des concepts شرعية</div>
+  </div>
+
+  <div class="session">
+    <div class="sh"><span class="tb ei">9:00 – 11:30</span><span class="sb ei">الوضعية المشكلة</span><span class="st">تفكيك الوضعيات المركبة واستخراج المواقف</span><span class="sd">2h30</span></div>
+    <div class="sbody">
+      <div class="task"><span class="tn">»</span><div><div class="tt">الاشتغال على 4 وضعيات مشكلة مختلفة من امتحانات سابقة.</div></div></div>
+      <div class="task"><span class="tn">»</span><div><div class="tt">التدرب على سرعة استخراج الإشكال الرئيسي، وتحديد مواقف أطراف الوضعية مع التعليل الشرعي الفوري.</div></div></div>
+      <div class="sync-block">👥 <b>Point de Synchro (11:30) :</b> مقارنة الأدلة الشرعية المستعملة للتعليل. نتأكد أن الجميع يوظف الآيات المناسبة للسياق تماماً دون حشو أو خروج عن الموضوع.</div>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="sh"><span class="tb rv">14:30 – 17:00</span><span class="sb rv">امتحان إسلاميات</span><span class="st">امتحانان تجريبيان كاملان (⏱️ 1h15 لكل امتحان)</span><span class="sd">2h30</span></div>
+    <div class="sbody">
+      <div class="task"><span class="tn">1</span><div><div class="tt">إنجاز الامتحان التجريبي الأول بشكل فردي مع تشغيل المؤقت (1 ساعة و15 دقيقة).</div></div></div>
+      <div class="task"><span class="tn">2</span><div><div class="tt">إنجاز الامتحان التجريبي الثاني مباشرة بعد استراحة قصيرة بنفس الشروط.</div></div></div>
+      <div class="sync-block">👥 <b>Point de Synchro (17:00) :</b> مراجعة سريعة لأوراق الإجابة. التركيز على طريقة صياغة المفاهيم (التوحيد، الإيمان، العفو، القسط) لضمان كتابة التعريف الاصطلاحي الدقيق الذي يمنح النقطة كاملة.</div>
+    </div>
+  </div>
+</div>
+
+<div class="panel" id="p-thu">
+  <div class="dh">
+    <div class="dh-title">الخميس — مهارات اللغة العربية والتعبير والإنشاء</div>
+    <div class="dh-sub">Objectif : Maîtrise absolue du barème du Taper/Élargir et application des règles</div>
+  </div>
+
+  <div class="session">
+    <div class="sh"><span class="tb ar">9:00 – 11:30</span><span class="sb ar">النصوص والدرس اللغوي</span><span class="st">تطبيق مهارات التحليل والصياغة الإعرابية</span><span class="sd">2h30</span></div>
+    <div class="sbody">
+      <div class="task"><span class="tn">»</span><div><div class="tt">حل أسئلة "مكون النصوص" لثلاثة امتحانات (مجزوءة الخطاب، مجزوءة القضايا المعاصرة، المفاهيم).</div></div></div>
+      <div class="task"><span class="tn">»</span><div><div class="tt">تطبيق أسئلة الدرس اللغوي: صياغة جمل وفق شروط محددة (مثال: جملة تتضمن تمييز نسبة ملحوظ، أو أمر يفيد الدعاء) مع الشكل التام.</div></div></div>
+      <div class="sync-block">👥 <b>Point de Synchro (11:30) :</b> يرسل كل عضو جمله المصاغة في شات المجموعة. نتحقق معاً من الحركات الإعرابية وضبط القواعد لضمان نقط الدرس اللغوي كاملة.</div>
+    </div>
+  </div>
+
+  <div class="session">
+    <div class="sh"><span class="tb rv">14:30 – 17:00</span><span class="sb rv">التعبير والإنشاء</span><span class="st">ماراثون توسيع فكرة وتحليل صورة (Timed Practice)</span><span class="sd">2h30</span></div>
+    <div class="sbody">
+      <div class="task"><span class="tn">1</span><div><div class="tt">اختيار قولة من امتحان جهوي وتطبيق مهارة "توسيع فكرة" (الالتزام بـ: الشرح، المناقشة، إبداء الرأي الشخصي) في 45 دقيقة.</div></div></div>
+      <div class="task"><span class="tn">2</span><div><div class="tt">التدرب على مهارة "تحليل صورة" (المستوى التقريري، المستوى الإيحائي، التركيب) في 45 دقيقة.</div></div></div>
+      <div class="sync-block">👥 <b>Point de Synchro (17:00) :</b> نقرأ المواضيع المكتوبة بشكل متبادل. نركز على معايير التنقيط الستة (6 نقط): الالتزام بالخطوات (2 ن)، توظيف المهارة (2 ن)، سلامة اللغة وعلامات الترقيم (2 ن).</div>
+    </div>
+  </div>
+</div>
+
+<div class="panel" id="p-fri">
+  <div class="dh">
+    <div class="dh-title">الجمعة — يوم المحاكاة الثلاثية الأبعاد (Multi-Simulations)</div>
+    <div class="dh-sub">Objectif : Adapter l'esprit à l'enchaînement des épreuves</div>
+  </div>
+
+  <div class="session"><div class="sh"><span class="tb rv">9:00 – 11:00</span><span class="sb hg">Exam 1</span><span class="st">امتحان جهوي كامل: تاريخ وجغرافيا (مؤقت: ساعتان)</span><span class="sd">2h</span></div></div>
+  <div class="session"><div class="sh"><span class="tb rv">11:15 – 13:15</span><span class="sb fr">Exam 2</span><span class="st">Examen Régional Complet de Français (Chrono : 2h)</span><span class="sd">2h</span></div></div>
+  
+  <div class="session"><div class="sh"><span class="tb br">13:15 – 15:00</span><span class="sb br">Pause</span><span class="st">غداء، صلاة الجمعة، وراحة لشحن الطاقة</span><span class="sd">1h45</span></div></div>
+
+  <div class="session">
+    <div class="sh"><span class="tb rv">15:00 – 17:00</span><span class="sb ar">Exam 3</span><span class="st">امتحان جهوي كامل: اللغة العربية (مؤقت: ساعتان)</span><span class="sd">2h</span></div>
+    <div class="sbody">
+      <div class="sync-block">👥 <b>Point de Synchro (17:00) :</b> بعد إنهاء الـ 3 امتحانات، نقوم بنشر الإحصائيات والنقط التقريبية في الشات. نحدد جماعياً الأخطاء التي تكررت بسبب التعب أو قلة التركيز في الامتحان الثالث لتفاديها يوم الجهوي الحقيقي.</div>
+    </div>
+  </div>
+</div>
+
+<div class="panel" id="p-sat">
+  <div class="dh">
+    <div class="dh-title">السبت — محاكاة الامتحان الجهوي الرسمي (Le Grand Test)</div>
+    <div class="dh-sub">Conditions Réelles, Mêmes Horaires, Zéro Note</div>
+  </div>
+
+  <div class="session"><div class="sh"><span class="tb rv">8:30 – 10:30</span><span class="sb hg">Épreuve 1</span><span class="st">التاريخ والجغرافيا (الاتفاق على نسخة امتحان موحدة غير منجزة سابقاً)</span><span class="sd">2h</span></div></div>
+  <div class="session"><div class="sh"><span class="tb rv">11:00 – 12:15</span><span class="sb ei">Épreuve 2</span><span class="st">التربية الإسلامية</span><span class="sd">1h15</span></div></div>
+  
+  <div class="session"><div class="sh"><span class="tb br">12:15 – 14:30</span><span class="sb br">Pause Midi</span><span class="st">Déjeuner et Repos</span><span class="sd">2h15</span></div></div>
+
+  <div class="session"><div class="sh"><span class="tb rv">14:30 – 16:30</span><span class="sb fr">Épreuve 3</span><span class="st">Langue Française (Étude de texte + Production)</span><span class="sd">2h</span></div></div>
+  <div class="session"><div class="sh"><span class="tb rv">17:00 – 19:00</span><span class="sb ar">Épreuve 4</span><span class="st">اللغة العربية</span><span class="sd">2h</span></div>
+    <div class="sbody">
+      <div class="sync-block">👥 <b>Master Calibration (19:00) :</b> نجمع عناصر التصحيح الرسمية للامتحانات الأربعة المتفق عليها. يقوم كل عضو بتصحيح أوراقه بنفسه بصرامة بالغة، ونضع قائمة بالجزئيات الصغيرة التي تحتاج صيانة سريعة غداً صباحاً.</div>
+    </div>
+  </div>
+</div>
+
+<div class="panel" id="p-sun">
+  <div class="dh">
+    <div class="dh-title">الأحد — الصيانة الأخيرة وغلق الدفاتر (Over & Out)</div>
+    <div class="dh-sub">Derniers ajustements de précision + Repos mental obligatoire</div>
+  </div>
+
+  <div class="session">
+    <div class="sh"><span class="tb br">9:00 – 12:00</span><span class="sb rv">الصيانة الأخيرة</span><span class="st">تعديل الجزئيات وحل المشاكل التقنية فقط</span><span class="sd">3h</span></div>
+    <div class="sbody">
+      <div class="task"><span class="tn">»</span><div><div class="tt">مراجعة سريعة جداً للملاحظات السلبية للامتحانات التجريبية السابقة لضمان عدم تكرارها.</div></div></div>
+      <div class="task"><span class="tn">»</span><div><div class="tt">تأكيد ضبط منهجية إنتاج المقال والتعامل مع وضعيات الإسلاميات في الذهن.</div></div></div>
+      <div class="sync-block">👥 <b>Final Group Standing (12:00) :</b> كلمة تشجيعية متبادلة بين أعضاء المجموعة في الشات. نغلق الملفات تماماً عند منتصف النهار.</div>
+    </div>
+  </div>
+
+  <div class="tip"><b>ملاحظة إجبارية ليوم الأحد :</b> يُمنع منعاً كلياً فتح أي دفتر أو مناقشة أي سؤال بعد الساعة 12:00 زوالاً. بقية اليوم مخصصة للراحة النفسية، تحضير المستندات والاستدعاء، والنوم الباكر لتدخلوا الامتحان بكامل طاقتكم الذهنية والتركيزية. أنتم مستعدون تماماً!</div>
+</div>
+
+</div>
+
+<script>
+function show(id){
+  document.querySelectorAll('.panel').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  document.getElementById('p-'+id).classList.add('active');
+  event.currentTarget.classList.add('active');
+}
+</script>
+
+</body>
+</html>
